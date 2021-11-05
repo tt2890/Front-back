@@ -10,6 +10,7 @@ const makeHeaders = (headers = {}) => ({
 
 const api = {
   //Create
+  // Não entendi a parte do async e por que usamos a tag body
   post: async (path, body) => {
     const res = await fetch(baseUrl + path, {
       method: 'post',
