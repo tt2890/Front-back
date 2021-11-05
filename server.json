@@ -1,0 +1,25 @@
+{
+  "person": [
+    {
+      "name": "Vítor",
+      "city": "Capitão Andrade",
+      "state": "MG",
+      "cpf": "00000000001",
+      "id": 1
+    },
+    {
+      "name": "Thiago",
+      "city": "Rio Preto",
+      "state": "SP",
+      "cpf": "00000000002",
+      "id": 2
+    },
+    {
+      "cpf": "1123",
+      "name": "teste",
+      "city": "Rio Preto",
+      "state": "sp",
+      "id": 3
+    }
+  ]
+}
