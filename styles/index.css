@@ -1,0 +1,123 @@
+body {
+  background-color: #666;
+  color: azure;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  padding: 20px 0;
+}
+
+header {
+  height: 80px;
+  padding: 0 490px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-bottom: 1px solid #fff; */
+  background-color: rgb(2, 85, 2);
+}
+
+main {
+  height: calc(100vh - 100px);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.container {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: gray; */
+  padding: 40px;
+  /* margin-top: 76px; */
+  border-radius: 32px;
+
+}
+
+form{
+ display: flex;
+ /* flex-direction: column; */
+ align-items: center;
+ gap: 8px; 
+}
+
+button {
+  /* width: 100%; */
+  padding: 8px;
+  font-size: 14px;
+  color: azure;
+  transition: 200ms linear;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: rgb(16, 109, 16);
+  
+}
+
+button:hover{
+  transform: scale(1.10);
+  background-color: green;
+}
+
+
+input {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+input::placeholder {
+  text-align:center;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  font-family: monospace;
+  color: azure;
+}
+
+footer {
+  align-self: flex-start;
+}
+
+.modal-container {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #0003;
+}
+#projects-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+
+  border: 1.5px solid #999;
+  padding: 1.5rem 2rem 2rem;
+  border-radius: 0.75rem;
+  background-color: green;
+}
+
+.project-container > p {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.25rem;
+}

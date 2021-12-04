@@ -1,0 +1,49 @@
+const baseUrl = "http://localhost:3333/";
+
+const makeBody = (body) => JSON.stringify(body);
+
+const makeHeaders = (headers = {}) => ({
+  Accept: "application/json",
+  "Content-Type": "application/json",
+});
+
+const api = {
+  //Create
+  // Não entendi a parte do async e por que usamos a tag body
+  post: async (path, body) => {
+    const res = await fetch(baseUrl + path, {
+      method: "post",
+      headers: makeHeaders(),
+      body: makeBody(body),
+    });
+
+    return res.json();
+  },
+
+  //Read
+  get: async (path) => {
+    const res = await fetch(baseUrl + path, {
+      method: "get",
+      headers: makeHeaders(),
+    });
+
+    return res.json();
+  },
+
+  //Update
+  put: (path, body) => {
+    return fetch(baseUrl + path, {
+      method: "put",
+      headers: makeHeaders(),
+      body: makeBody(body),
+    });
+  },
+
+  //Delete
+  delete: (path) => {
+    return fetch(baseUrl + path, {
+      method: "delete",
+      headers: makeHeaders(),
+    });
+  },
+};
